@@ -29,7 +29,7 @@ class AircraftMassenger():
             self.file.write(f"{str(info)}\n")
             self.file.write("\n")
 
-    def remove(self,registrationNo):
+    def delete(self,registrationNo):
         info=self.find(registrationNo)
         self.aircraft.remove(info)
 

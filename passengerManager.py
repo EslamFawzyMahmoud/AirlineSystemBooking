@@ -44,7 +44,7 @@ class passengerManager():
         self.__refreshfile()
 
     def create(self,name,age,PhoneNo,Email,Street,City,Country):
-        info=self.Passenger(name,age,PhoneNo,Email,Street,City,Country)
+        info=self.passengers(name,age,PhoneNo,Email,Street,City,Country)
         self.passengers.append(info)
         self.file.write(f"{str(info)}\n")
         self.file.flush()
